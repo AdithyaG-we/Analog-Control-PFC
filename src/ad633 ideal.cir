@@ -1,0 +1,6 @@
+* Simple behavioral model for AD633
+* Multiplies (X1-X2) * (Y1-Y2)/10 + Z -> W
+
+.subckt AD633 X1 X2 Y1 Y2 Z W
+B1 W 0 V = (V(X1,X2)*V(Y1,Y2))/10 + V(Z)
+.ends AD633
